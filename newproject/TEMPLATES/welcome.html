@@ -1,0 +1,206 @@
+<html lang="en">
+{% load static %} 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>TechDel.|Welcome</title>
+ <!-- <link href="{% static "payment/css/materialize.css" %}" type="text/css" rel="stylesheet" media="screen,projection">
+<img src="{% static "payment/images/qb.jpg" %}" alt="My image" width=100% height =100>
+-->
+  <style>
+    header{
+      background: url(https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent" id="header">
+      <div class="container">
+        <a href="#" class="brand-logo">TechDel<span>.</span></a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">Features</a></li>
+          <!--<li><a href="#services">Services</a></li>-->
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../login/">Login</a></li>
+          <li><a href="../register/">Sign-Up</a></li>
+
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#photos">Features</a></li>
+          <!--<li><a href="#services">Services</a></li>-->
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../login/">Login</a></li>
+          <li><a href="../register/">Sign-Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <br><br>
+        <br><br>
+        <br><br>
+        <h1 class="header white-text ">Welcome</h1>
+        <div class="row ">
+          <h3 class="header col s12  white-text">A Simple and Convenient Way to Buy Gadgets Online</h3>
+        </div>
+      </div>
+
+  </header>
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="https://images.unsplash.com/photo-1486611367184-17759508999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">High Quality Products</h2>
+        <p>Choose from a variety of items sold by our trusted dealers. The product is inspected by our Customer Satisfaction Team before it's Dispached!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="https://images.unsplash.com/photo-1491933382434-500287f9b54b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="indigo-text text-darken-4">Best In-Class Customer Service</h2>
+        <p>A dedicated team just to make your Shopping Experience Seamless, just send us a text or a mail and our customer service team will take care of your every need. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">All About You</h2>
+        <p>Shop even after you drop. Each feature is designed to cater to your every need. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  <section class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">Why choose us? </h2>
+        <p></p>
+        <p> </p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#Python" class="active indigo-text text-darken-4">Delivery</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#Sql" class="indigo-text text-darken-4">Returns</a>
+          </li>
+        </ul>
+        <div id="Python" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Fast Delivery</p>
+            <p>Delivered right to your doorstep. Secure packaging so you know you're getiing the real deal. </p>
+            <p>Too lazy to get up? Leave the door open and we'll bring it to your hands. Just Kidding, unless you want us to. </p>
+        </div>
+        <div id="Sql" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Easy Returns</p>
+            <p>30 day return policy on all products. No questions asked.</p>
+            <p>6 month replacement on all malfunctioning products along with company warrenty</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  
+  <!-- footer -->
+  <footer class="page-footer grey darken-3" >
+    <div class="container"id ="contact">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>About us</h5>
+          <p>We are a new start-up aimed at providing the best for our customers, and nothing less.</p>
+          <h5>Contact Us</h5>
+          <p>Supreeth : +917349738884</p>
+          <p>Head office : techdel@gmail.com</p>
+          <p>Customer Service : techhelp@gmail.com</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#photos">Features</a></li>
+            <li><a class="grey-text text-lighten-3" href="#header">Back Up</a></li>
+            <li><a class="grey-text text-lighten-3" href="../login/">Login</a></li>
+            <li><a class="grey-text text-lighten-3" href="../register/">Sign-Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; TechDel</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+</html>
